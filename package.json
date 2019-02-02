@@ -1,7 +1,7 @@
 {
   "name": "chorder",
-  "version": "1.0.0",
-  "description": "Dynamically create fields",
+  "version": "0.0.1",
+  "description": "Dynamically create forms.",
   "main": "src/chorder.js",
   "scripts": {
     "build": "node build/"
