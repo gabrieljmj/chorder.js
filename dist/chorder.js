@@ -46,6 +46,7 @@ function () {
       });
 
       clone.querySelector('button[cd-remove]').onclick = function (e) {
+        e.preventDefault();
         clone.outerHTML = '';
       };
 
@@ -127,7 +128,9 @@ function () {
 
       var addBtn = cd.querySelector('*[cd-add]');
 
-      addBtn.onclick = function () {
+      addBtn.onclick = function (e) {
+        e.preventDefault();
+
         _this2.appendToData(cd, template);
       };
     }

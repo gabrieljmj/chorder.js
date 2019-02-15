@@ -50,7 +50,9 @@ export default class Chorder {
   __applyEvents(cd, template) {
     const addBtn = cd.querySelector('*[cd-add]')
 
-    addBtn.onclick = () => {
+    addBtn.onclick = e => {
+      e.preventDefault()
+      
       this.appendToData(cd, template)
     }
   }

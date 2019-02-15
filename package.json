@@ -1,6 +1,6 @@
 {
   "name": "chorder",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Dynamically create forms.",
   "main": "src/chorder.js",
   "scripts": {

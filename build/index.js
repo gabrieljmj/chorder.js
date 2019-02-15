@@ -33,13 +33,13 @@ const getOptions = ({ minify = false } = {}) => {
 
 async function build() {
   const { input, output } = getOptions()
-  const { input: minifiedInput, output: minifiedOutput } = getOptions({minify: true})
+  //const { input: minifiedInput, output: minifiedOutput } = getOptions({minify: true})
 
   const bundle = await rollup(input)
-  const minifiedBundle = await rollup(minifiedInput)
+  //const minifiedBundle = await rollup(minifiedInput)
 
   await bundle.write(output)
-  await minifiedBundle.write(minifiedOutput)
+  //await minifiedBundle.write(minifiedOutput)
 }
 
 (async () => {

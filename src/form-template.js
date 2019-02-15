@@ -14,6 +14,8 @@ export default class FormTemplate {
     })
     
     clone.querySelector('button[cd-remove]').onclick = e => {
+      e.preventDefault()
+      
       clone.outerHTML = ''
     }
     
