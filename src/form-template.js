@@ -10,12 +10,12 @@ export default class FormTemplate {
     
     Array.from(clone.querySelectorAll('*[cd-field]')).forEach(field => {
       const name = field.dataset.cdName;
-      field.setAttribute('name', `${this.name}[${name}][]`)
+      field.setAttribute('name', `${this.name}[][${name}]`)
     })
     
     clone.querySelector('button[cd-remove]').onclick = e => {
       e.preventDefault()
-      
+
       clone.outerHTML = ''
     }
     

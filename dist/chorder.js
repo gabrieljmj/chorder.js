@@ -42,7 +42,7 @@ function () {
       clone.dataset[this.name] = n;
       Array.from(clone.querySelectorAll('*[cd-field]')).forEach(function (field) {
         var name = field.dataset.cdName;
-        field.setAttribute('name', "".concat(_this.name, "[").concat(name, "][]"));
+        field.setAttribute('name', "".concat(_this.name, "[][").concat(name, "]"));
       });
 
       clone.querySelector('button[cd-remove]').onclick = function (e) {
